@@ -9,105 +9,134 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/jqbar.js" type="text/javascript"></script>
 </head>
 
 <body>
-<div class="banner-top">
-	<img class="head" src="images/head.jpg"/>
-	<div class="re" alt="Resume-ChenJianming">个人简历-前端工程师</div>
-	<img class="social-network" src="images/github.png">
-	<img class="social-network" src="images/sinaweibo.png">
-</div>
+	<div class="banner-top">
+		<img class="head" src="images/head.jpg"/>
+		<div class="re" alt="Resume-ChenJianming">个人简历-前端工程师</div>
+		<img class="social-network" src="images/github.png">
+		<img class="social-network" src="images/sinaweibo.png">
+	</div>
 
-<ul id="menu">
-	<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-	<li data-menuanchor="page2"><a href="#page2">基本信息</a></li>
-	<li data-menuanchor="page3"><a href="#page3">我的技能</a></li>
-	<li data-menuanchor="page4"><a href="#page4">项目实习</a></li>
-	<li data-menuanchor="page5"><a href="#page5">其他能力</a></li>
-	<li data-menuanchor="page6"><a href="#page6">联系方式</a></li>
-</ul>
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+		<li data-menuanchor="page2"><a href="#page2">基本信息</a></li>
+		<li data-menuanchor="page3"><a href="#page3">我的技能</a></li>
+		<li data-menuanchor="page4"><a href="#page4">其他能力</a></li>
+		<li data-menuanchor="page5"><a href="#page5">项目实习</a></li>
+		<li data-menuanchor="page6"><a href="#page6">联系方式</a></li>
+	</ul>
 
-<div id="dowebok">
-<div>
-	<div class="section">
-		<div class="box1">
-			<div class="b1-text">
-				<p >个人简历</p>
-				<p>陈建名</p>
-				<p>应聘岗位：前端工程师</p>
-				<div id="down">
-					<canvas id="downCanvas" width="50" height="50">你的浏览器不支持canvas，请下载更新版本的浏览器
-					</canvas>
+	<div id="dowebok">
+	
+		<div class="section">			<!-- 第一页 -->
+			<div class="box1">
+				<div class="b1-text">
+					<p >个人简历</p>
+					<p>陈建名</p>
+					<p>应聘岗位：前端工程师</p>
+					<div id="down">
+						<canvas id="downCanvas" width="50" height="50">你的浏览器不支持canvas，请下载更新版本的浏览器
+						</canvas>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="section">
+			<div class="box2">					<!-- 第二页 -->
+				<div class="box2-top">
+						<!-- 上半边内容 -->
+					<img class="b2-me" src="images/me2.png"/>
+					<ul class="b2-text">
+						<li><img src="images/user.png"><a>姓名：陈建名</a></li>
+						<li><img src="images/home.png"><a>家乡：四川宜宾</a></li>
+						<li><img src="images/win.png"><a>学历：硕士</a></li>
+						<li><img src="images/world.png"><a>学校：北京邮电大学</a></li>
+						<li><img src="images/phone.png"><a>英语：CET-6</a></li>
+						<li><img src="images/mail.png"><a>兴趣：运动、旅游</a></li>
+					</ul>
+
+				</div>
+				<div class="box2-bottom">
+					<!-- 下半边内容 -->
+					<ul>
+						<p class="follow">心路历程</p>
+						<li>在求职路上不断探索的我，2015年大学毕业进入银行电子银行部，对我来说诗和远方越来越远。体制、悠闲、乏味的生活方式并不是我的Style，理想还在么？</li>
+						<img src="images/arrow.png">
+						<li>2016年，重新思考自己的未来，寻找到自己的快乐才是生活和工作向前走的最佳动力。前端技术再一次来到了我的面前，coding给我带来了浸入感。</li>
+						<img src="images/arrow.png">
+						<li>2017年：</br>心之所向，素履以往；</br>生如逆旅，一苇以航。</br>Fllowing My Heart!相信未来的一切会更佳美好。</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-
-	</div>
-	<div class="section">
-		<div class="box2">
-			<div class="box2-top">     
-					<!-- 上半边内容 -->
-				<img class="b2-me" src="images/me2.jpg"/>
-				<ul class="b2-text">
-					<li><img src="images/user.png"><a></a><a>姓名：陈建名</a></li>
-					<li><img src="images/home.png"><a></a><a>家乡：四川宜宾</a></li>
-					<li><img src="images/win.png"><a></a><a>学历：硕士</a></li>
-					<li><img src="images/world.png"><a></a><a>毕业院校：北京邮电大学</a></li>
-					<li><img src="images/phone.png"><a></a><a>电话：18108190419</a></li>
-					<li><img src="images/mail.png"><a></a><a>邮箱：chenjycm@163.com</a></li>
-				</ul>
-
+		<div class="section">
+			<div class="box3">     <!--  第三页内容 -->
+				<div class="b3-left">
+					<ul class="logos">
+						<li class="htmllogo"></li>
+						<li class="csslogo"></li>
+						<li class="jslogo"></li></br>
+						<li class="jquerylogo"></li>
+						<li class="reactlogo"></li>
+					</ul>
+					<!-- <div >
+						<img  scr=".images/html.png">
+						<img  scr=".images/css.png">
+						<img  scr=".images/js.png"></br>
+						<img scr=".images/jquery.png">
+						<img  scr=".images/react.png">
+					</div> -->
+					<!-- 第三页 -->
+					<div class="container">
+						<div class="six columns">
+							<div class="bars MT30">
+								<div id="bar-1">
+								</div>
+								<div id="bar-2">
+								</div>
+								<div id="bar-3">
+								</div>
+								<div id="bar-4">
+								</div>
+								<div id="bar-5">
+								</div>
+								<div id="bar-6">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b3-right">
+					<div class="skill-1"><p>深刻理解Web标准，熟悉HTML盒模型和各类布局方式，能够根据需求搭配css实现页面布局和交互效果等较复杂的布局。</p></div>
+					<div class="skill-2"><p>熟练运用css及css3新属性，注重浏览器兼容性，掌握css预编译器Less及Sass，正在学习和实践响应式布局。</p></div>
+					<div class="skill-3"><p>对闭包、作用域、面向对象编程思想有一定了解，能够熟练编写JavaScript原生代码，掌握jQuery，注重性能优化。</p></div>
+					<div class="skill-4"><p>熟练使用Sublime、chrome等开发和调试工具，熟悉Gulp node.js等工具，熟悉C、C++、SQL、VB等语言。正在深入学习React.js。</p></div>
+				</div>
 			</div>
-			<div class="box2-bottom">
-				<!-- 下半边内容 -->
-
-				<ul>
-					<p class="follow">心路历程</p>
-					<li>一个在求职路上不断探索的我，2015年大学毕业进入了金融行业，对我来说诗和远方越来越远。体制、悠闲、乏味的生活方式并不是我的Style，理想还在么？</li>
-					<img src="images/arrow.png">
-					<li>2016年，重新思考自己的未来，寻找到自己的快乐才是生活和工作向前走的最佳动力。前端技术再一次来到了我的面前，coding给我带来了浸入感。</li>
-					<img src="images/arrow.png">
-					<li>2017年：</br>心之所向，素履以往；</br>生如逆旅，一苇以航。</br>Fllowing My Heart!相信未来的一切会更佳美好。</li>
-					
-				</ul>
+		</div>
+		<div class="section">
+			<div class="box4"> 		<!-- 	第四页内容 -->
+				<h3>其他能力</h3>
+				<p>定的菜单没有默认的样式，你需要自行编写</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box5">			<!-- 第五页内容 -->
+				<h3>项目实习</h3>
+				<p>定的菜单没有默认的样式，你需要自行编写</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box6">			<!-- 第六页内容 -->
+				<h3>联系方式</h3>
+				<p>定的菜单没有默认的样式，你需要自行编写</p>
 			</div>
 		</div>
 	</div>
-	<div class="section">
-		<div class="box3">
-			<h3>我的技能</h3>
-			<p>绑定的菜单没有默认的样式，你需要自行编写</p>
-		</div>
-	</div>
-	<div class="section">
-		<div class="box4">
-			<h3>项目实习</h3>
-			<p>定的菜单没有默认的样式，你需要自行编写</p>
-		</div>
-	</div>
-	<div class="section">
-		<div class="box5">
-			<h3>其他能力</h3>
-			<p>定的菜单没有默认的样式，你需要自行编写</p>
-		</div>
-	</div>
-	<div class="section">
-		<div class="box6">
-			<h3>联系方式</h3>
-			<p>定的菜单没有默认的样式，你需要自行编写</p>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
 
 <a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
 <a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>

@@ -37,3 +37,39 @@
 .box2-bottom li{ width: 220px;height: 160px;margin:10px 0 0 0;border:3px solid #003359;border-radius: 20px;padding:4px;vertical-align:middle;list-style-type: none;display: inline-block;text-align: left; }
 .box2-bottom img{width: 130px;height: 108px;vertical-align: middle;}
 .box2-bottom p{width:23px;height:120px;margin-right: 10px;display:inline-block; font-size:23px;font-weight:900;vertical-align: middle;}
+/*第三页的内容*/
+.b3-left{display: inline-block;margin:0 0 0 60px;vertical-align: top;}
+/*logos*/
+.logos{width: 450px;height: 250px;margin:98px 0 0 0;}
+.logos li{list-style-type: none;display: inline-block;}
+/*.logos img{border:1px solid green;}*/
+.htmllogo{width:118px;height:144px;background: url(../images/html.png);background-size: ;background-repeat: no-repeat;}
+.csslogo{width:118px;height:144px;background: url(../images/css.png);background-size:117px 144px;background-repeat: no-repeat;}
+.jslogo{width:118px;height:144px;background: url(../images/js.png);background-size:140px 150px ;background-repeat: no-repeat;}
+.jquerylogo{width:200px;height:78px;background: url(../images/jquery.png);background-size:200px ;background-repeat: no-repeat;}
+.reactlogo{width:214px;height:93px;background: url(../images/react.png);background-size:200px ;background-repeat: no-repeat;}
+
+/*2、柱状条*/
+.jqbar{position: relative;top: 70px;}
+.jqbar.horizontal span{display: inline-block;margin-left: 5px;font-size: 11px;font-weight: bold;}
+.jqbar.horizontal .bar-percent{font-size: 11px;font-weight: bold;height: 20px;margin-bottom: 5px;}
+.container{width: 450px;margin: 40px 0 30px 0; height: 290px;position: relative; color: #555;}
+.column, .columns{float: left;display: inline;margin-left: 10px;margin-right: 10px;}/*.row{margin-bottom: 20px;}*/
+#bar-1{top: 20px;}
+#bar-2{top: 28px;}
+#bar-3{top: 36px;}
+#bar-4{top: 44px;}
+#bar-5{top: 52px;}
+#bar-6{top: 60px;}
+.jqbar.horizontal .bar-label{text-align: right;width: 90px;vertical-align: middle;}
+.bar-level {vertical-align: middle;}
+/*详细技能说明*/
+.b3-right{width: 682px;height: 700px;display: inline-block;vertical-align: top;position: relative;}
+.b3-right div{width: 230px;height: 230px;border-radius: 50%;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
+.skill-1{position: absolute;top:70px;left:10px;border:10px solid #F26432;}
+.b3-right p{position: absolute;top:0;left:0;bottom:0;right:0;width:169px;height:150px;margin:auto;}
+.skill-2{position: absolute;top:124px;left:318px;border:10px solid #3799D6;}
+.skill-3{position: absolute;top:370px;left:15px;border:10px solid #FDDA3F;}
+.skill-4{position: absolute;top:420px;left:332px;border:10px solid #EA805C;}
+
+/*第四页内容*/
