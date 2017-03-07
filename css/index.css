@@ -1,3 +1,70 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+li {list-style-type: none;}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+
 #menu { position: fixed; right: 20px; top: 50%; width: 90px; margin: -160px 0 0; padding: 0; list-style-type: none; z-index: 70;}
 #menu li { margin-top: 10px; font: 14px "Microsoft Yahei";}
 #menu a { display: block; padding: 10px 0; background-color: #fff; color: #0074EA; text-align: center; text-decoration: none;}
@@ -15,13 +82,13 @@
 .box6 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/bg6.png); overflow: hidden;}
 /*第一页的内容*/
 .b1-text {width:400px;height: 450px; margin: 20% auto;text-align: center;}
-.b1-text p{ font-size: 24px;color:#FCFDFC; }
+.b1-text p{ font-size: 24px;color:#FCFDFC;line-height: 2; }
 @-moz-keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 @-webkit-keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 @-o-keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 @keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 #down {  text-align: center;  height: 150px; margin-top:110px; -moz-animation: myMove 1s linear infinite alternate;   -webkit-animation: myMove 1s linear infinite alternate;  -o-animation: myMove 1s linear infinite alternate;  animation: myMove 1s linear infinite alternate;}
-
+#downCanvas{margin: 0 auto;}
 /*第二页的内容*/
 .box2-top { text-align: center;margin-top: 100px;  }
 .b2-me {width:379px; height:279px;margin:9px 0 0 100px; border-radius: 20px;-webkit-border-radius:20px;}
@@ -29,12 +96,13 @@
 .b2-text li{margin-top: 15px;list-style-type:none;}
 .b2-text img{ width: 20px; height: 20px; margin-left:15px;vertical-align: middle;}
 .b2-text a{vertical-align: middle;margin-left:15px;}
-.box2-bottom {border-top:2px dashed gray;border-bottom:2px dashed gray;margin-top:20px;text-align: center;}
+.box2-bottom {border-top:2px dashed gray;margin-top:20px;text-align: center;}
 /*.box2-bottom p{width:23px;height:120px;display:inline-block; font-size:23px;}
 */
 /*.box2-bottom ul{display: inline-block;}*/
-
-.box2-bottom li{ width: 220px;height: 160px;margin:10px 0 0 0;border:3px solid #003359;border-radius: 20px;padding:4px;vertical-align:middle;list-style-type: none;display: inline-block;text-align: left; }
+.box2-bottom li{ width: 220px;height: 160px;margin:10px 0 0 0;border:3px solid #003359;border-radius: 20px;padding:4px;vertical-align:middle;list-style-type: none;display: inline-block;text-align: left;font-size: 17px;
+    padding: 5px 5px 5px 11px;
+    line-height: 1.5; }
 .box2-bottom img{width: 130px;height: 108px;vertical-align: middle;}
 .box2-bottom p{width:23px;height:120px;margin-right: 10px;display:inline-block; font-size:23px;font-weight:900;vertical-align: middle;}
 /*第三页的内容*/
@@ -53,7 +121,7 @@
 .jqbar{position: relative;top: 70px;}
 .jqbar.horizontal span{display: inline-block;margin-left: 5px;font-size: 11px;font-weight: bold;}
 .jqbar.horizontal .bar-percent{font-size: 11px;font-weight: bold;height: 20px;margin-bottom: 5px;}
-.container{width: 450px;margin: 40px 0 30px 0; height: 290px;position: relative; color: #555;}
+.container{width: 450px;margin: 0px 0 30px 0; height: 290px;position: relative; color: #555;}
 .column, .columns{float: left;display: inline;margin-left: 10px;margin-right: 10px;}/*.row{margin-bottom: 20px;}*/
 #bar-1{top: 20px;}
 #bar-2{top: 28px;}
@@ -67,9 +135,29 @@
 .b3-right{width: 682px;height: 700px;display: inline-block;vertical-align: top;position: relative;}
 .b3-right div{width: 230px;height: 230px;border-radius: 50%;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
 .skill-1{position: absolute;top:70px;left:10px;border:10px solid #F26432;}
-.b3-right p{position: absolute;top:0;left:0;bottom:0;right:0;width:169px;height:150px;margin:auto;}
-.skill-2{position: absolute;top:124px;left:318px;border:10px solid #3799D6;}
-.skill-3{position: absolute;top:370px;left:15px;border:10px solid #FDDA3F;}
-.skill-4{position: absolute;top:420px;left:332px;border:10px solid #EA805C;}
+.b3-right p{position: absolute;top:0;left:0;bottom:0;right:0;width:169px;height:150px;margin:auto;font-size: 16px;line-height: 1.5em;padding: 10px;}
+.skill-2{position: absolute;top:114px;left:300px;border:10px solid #3799D6;}
+.skill-3{position: absolute;top:330px;left:15px;border:10px solid #FDDA3F;}
+.skill-4{position: absolute;top:380px;left:312px;border:10px solid #EA805C;}
 
 /*第四页内容*/
+/*上*/
+.b4-top{width: 100%;height: 350px;}
+.timeline-top{border:1px solid green;width: 250px;height: 250px;margin:100px 0 0 0;vertical-align: bottom;display:inline-block;position: relative;}
+.first-top{margin-left: 38px;}
+.timeline-top-time{border:1px solid green;width: 150px;text-align: center;font-size: 14px;display:inline-block;}
+.work{width: 160px;vertical-align: middle;display:inline-block;font-size: 14px;}
+.skills{width: 80px;vertical-align: middle;display:inline-block;font-size: 14px;}
+.skills li{padding-left: 10px;}
+.point-up{ width: 33px; height: 52px;top:204px;left: 102px; position: absolute;}
+/*中*/
+.b4-middle{width: 100%;height: 20px;background:url(../images/timeline.png);background-repeat: repeat-x;}
+/*下*/
+.b4-bottom{width: 100%;height: 300px;}
+.timeline-bottom{border:1px solid green;width: 250px;height: 250px;margin:0;vertical-align: top;display:inline-block;position: relative;}
+.timeline-bottom-time{border:1px solid green;width: 150px;text-align: center;font-size: 14px;display:inline-block;}
+.first-bottom{margin-left: 82px;}
+.work-2{width: 160px;margin-top: 60px;vertical-align: middle;display:inline-block;font-size: 14px;}
+.skills-2{width: 80px;vertical-align: middle;display:inline-block;font-size: 14px;}
+.skills-2 li{padding-left: 10px;}
+.point-down{ width: 33px; height: 52px;top:2px;left: 115px; position: absolute;}
