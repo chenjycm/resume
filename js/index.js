@@ -8,7 +8,7 @@ $(document).ready(function() {
 		});
 		setInterval(function(){			//第五页轮播动画
 	        $.fn.fullpage.moveSlideRight();
-	    }, 4000);
+	    }, 8000);
 	});
 	$(".re").mouseover(function(){
 		this.innerHTML="Resume-ChenJianming";
