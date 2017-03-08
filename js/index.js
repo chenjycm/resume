@@ -4,7 +4,11 @@ $(document).ready(function() {
 			slidesColor: ['#0075D1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 			menu: '#menu'
+			// loopBottom: true
 		});
+		setInterval(function(){			//第五页轮播动画
+	        $.fn.fullpage.moveSlideRight();
+	    }, 4000);
 	});
 	$(".re").mouseover(function(){
 		this.innerHTML="Resume-ChenJianming";
