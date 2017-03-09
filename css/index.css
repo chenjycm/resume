@@ -15,7 +15,7 @@ time, mark, audio, video {
     border:0;
     outline:0;
     font-size:100%;
-    vertical-align:baseline;
+    vertical-align:middle;
     background:transparent;
 
 }
@@ -26,7 +26,7 @@ body {
 }
 
 :focus {
-	outline: 1;
+	outline: none;
 }
 
 article,aside,canvas,details,figcaption,figure,
@@ -160,7 +160,7 @@ a {
 
 
 /*第五页的内容*/
-.prod{width: 950px;height: 570px;margin: 27px 10px 10px 134px;text-align: center;}
+.prod{width: 950px;height: 570px;text-align: center;margin: 66px 10px 10px 135px;}
 .prod-title{ font-size: 24px;font-weight: 900;color:#0074EA;margin-top: 20px;}
 .prod-pic{width:500px;height:512px;display:inline-block;position: relative;}
 .prod-pic img{ width: 348px;height: 192px;position: absolute;box-shadow: 5px 6px 5px #888888;}
@@ -172,7 +172,16 @@ a {
 .prod-word li{list-style-type: disc;}
 
 /*第六页的内容*/
-.contacts{border:5px solid #FFFFFF;border-radius:10%;width: 510px;height: 400px;margin: 0 auto;margin-top: 120px;}
-.contacts p{text-align: center;font-size: 24px;font-weight: 900;line-height: 2;margin-top: 20px}
-.contacts ul{margin: 98px 10px 10px 50px;}
-.contacts span{width: 82px;display: inline-block;}
+.contacts{width: 500px;height: 365px;border-radius:18px;margin: 0 auto;margin-top: 120px;background: url('../images/card.png');background-repeat: no-repeat;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
+.contacts p{text-align: center;font-size: 24px;line-height: 2;height: 48px;padding: 26px 10px;color: #ffffff;text-shadow: 2px 2px 2px #111;}
+.contacts img{width: 120px;height:120px;margin: 10px 10px 10px 50px;box-shadow: 4px 4px 7px #313131;}
+.contacts ul{margin: 10px 10px 10px 20px;display: inline-block;}
+.contacts span{width: 82px;display: inline-block;font-weight: 900;text-shadow: 1px 1px 1px #fff;}
+
+
+
+/*按钮样式*/
+.button{width: 90px;line-height: 17px;text-align: center;color: #fff;font-family:"Microsoft Yahei";text-shadow:1px 1px 1px #333;border-radius: 5px;margin:0;position: relative;overflow: hidden;}
+.button.black{border:1px solid #333;box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;background: -webkit-linear-gradient(top,#656565,#4c4c4c);background: -moz-linear-gradient(top,#656565,#4a4a4a);background: linear-gradient(top,#656565,#4a4a4a);}
+.black:hover{background: -webkit-linear-gradient(top,#818181,#575757);background: -moz-linear-gradient(top,#818181,#575757);background: linear-gradient(top,#818181,#575757);}
+.black:active{top:1px;box-shadow: 0 1px 3px #111 inset,0 3px 0 #fff;background: -webkit-linear-gradient(top,#424242,#575757);background: -moz-linear-gradient(top,#424242,#575757);background: linear-gradient(top,#424242,#575757);}
