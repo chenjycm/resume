@@ -64,8 +64,8 @@ a {
 #menu .active a { color: #fff; background-color: rgb(0, 116, 234);}
 .banner-top {height: 64px; width:100%;  position: fixed;z-index: 100;background-color: #ADADAD;background: rgba(14, 10, 22,0.3);filter:alpha(opacity=30); }
 .re{ margin-top: 19px; color:#FFF8EF;font-size: 18px;display: inline-block;}
-.head {height: 46px;width:46px; float: left;margin: 10px;border-radius: 23px; -webkit-border-radius:23px; vertical-align: middle;}
-.social-network {height: 46px;width:46px;float: right;border-radius: 23px; -webkit-border-radius:23px;padding-top: 10px; padding-bottom: 10px;}
+.head {height: 46px;width:46px; float: left;margin: 10px;border-radius: 50%; -webkit-border-radius:50%; vertical-align: middle;}
+.social-network {height: 46px;width:46px;float: right;border-radius: 50%; -webkit-border-radius:50%;padding-top: 10px; padding-bottom: 10px;}
 .section {  font: 18px "Microsoft Yahei"; color: #393939;}
 .box1 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/11.jpg); overflow: hidden;}
 .box2 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/bg6.png); overflow: hidden;}
@@ -84,12 +84,12 @@ a {
 #downCanvas{margin: 0 auto;}
 /*第二页的内容*/
 .box2-top { text-align: center;margin-top: 100px;  }
-.b2-me {width:379px; height:279px;margin:9px 0 0 100px; border-radius: 20px;-webkit-border-radius:20px;}
-.b2-text {width:300px;height:267px;margin:14px 0 0 20px;margin-left:20px;vertical-align:top;display: inline-block;text-align: left;}
+.b2-me {width:379px; height:279px;position: relative;left:-120%; border-radius: 20px;-webkit-border-radius:20px;box-shadow: 4px 4px 7px #313131;}
+.b2-text {width:300px;height:267px; position: relative;right:-120%; padding: 10px 30px;vertical-align:top;display: inline-block;text-align: left;}
 .b2-text li{margin-top: 15px;list-style-type:none;}
 .b2-text img{ width: 20px; height: 20px; margin-left:15px;vertical-align: middle;}
 .b2-text a{vertical-align: middle;margin-left:15px;}
-.box2-bottom {border-top:2px dashed gray;margin-top:20px;text-align: center;}
+.box2-bottom {border-top:2px dashed gray;margin-top:20px;text-align: center;position: relative;display: none;}
 /*.box2-bottom p{width:23px;height:120px;display:inline-block; font-size:23px;}
 */
 /*.box2-bottom ul{display: inline-block;}*/
@@ -104,11 +104,11 @@ a {
 .logos{width: 450px;height: 250px;margin:98px 0 0 0;}
 .logos li{list-style-type: none;display: inline-block;}
 /*.logos img{border:1px solid green;}*/
-.htmllogo{width:118px;height:144px;background: url(../images/html.png);background-size: ;background-repeat: no-repeat;}
-.csslogo{width:118px;height:144px;background: url(../images/css.png);background-size:117px 144px;background-repeat: no-repeat;}
-.jslogo{width:118px;height:144px;background: url(../images/js.png);background-size:140px 150px ;background-repeat: no-repeat;}
-.jquerylogo{width:200px;height:78px;background: url(../images/jquery.png);background-size:200px ;background-repeat: no-repeat;}
-.reactlogo{width:214px;height:93px;background: url(../images/react.png);background-size:200px ;background-repeat: no-repeat;}
+.htmllogo{display:none;width:118px;height:144px;background: url(../images/html.png);background-size: ;background-repeat: no-repeat;}
+.csslogo{display:none;width:118px;height:144px;background: url(../images/css.png);background-size:117px 144px;background-repeat: no-repeat;}
+.jslogo{display:none;width:118px;height:144px;background: url(../images/js.png);background-size:140px 150px ;background-repeat: no-repeat;}
+.jquerylogo{display:none;width:200px;height:78px;background: url(../images/jquery.png);background-size:200px ;background-repeat: no-repeat;}
+.reactlogo{display:none;width:214px;height:93px;background: url(../images/react.png);background-size:200px ;background-repeat: no-repeat;}
 
 /*2、柱状条*/
 .jqbar{position: relative;top: 70px;}
@@ -172,8 +172,8 @@ a {
 .prod-word li{list-style-type: disc;}
 
 /*第六页的内容*/
-.contacts{width: 500px;height: 365px;border-radius:18px;margin: 0 auto;margin-top: 120px;background: url('../images/card.png');background-repeat: no-repeat;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
-.contacts p{text-align: center;font-size: 24px;line-height: 2;height: 48px;padding: 26px 10px;color: #ffffff;text-shadow: 2px 2px 2px #111;}
+.contacts{width: 500px;height: 365px;border-radius:18px;margin: 0 auto;margin-top: 100px;background: url('../images/card.png');background-repeat: no-repeat;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
+.contacts p{text-align: center;font-size: 24px;line-height: 2;height: 28px; padding: 60px 10px 20px 10px;color: #ffffff;text-shadow: 2px 2px 2px #111;}
 .contacts img{width: 120px;height:120px;margin: 10px 10px 10px 50px;box-shadow: 4px 4px 7px #313131;}
 .contacts ul{margin: 10px 10px 10px 20px;display: inline-block;}
 .contacts span{width: 82px;display: inline-block;font-weight: 900;text-shadow: 1px 1px 1px #fff;}
@@ -185,3 +185,11 @@ a {
 .button.black{border:1px solid #333;box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;background: -webkit-linear-gradient(top,#656565,#4c4c4c);background: -moz-linear-gradient(top,#656565,#4a4a4a);background: linear-gradient(top,#656565,#4a4a4a);}
 .black:hover{background: -webkit-linear-gradient(top,#818181,#575757);background: -moz-linear-gradient(top,#818181,#575757);background: linear-gradient(top,#818181,#575757);}
 .black:active{top:1px;box-shadow: 0 1px 3px #111 inset,0 3px 0 #fff;background: -webkit-linear-gradient(top,#424242,#575757);background: -moz-linear-gradient(top,#424242,#575757);background: linear-gradient(top,#424242,#575757);}
+
+
+
+/*小动画，飘方块*/
+.iconfont{font-size:32px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale;}
+.container-pao{width:70px;height: 70px;position: relative;left:16%;top:70%;}
+.pao{width: 61px;height: 68px; position: absolute;background-size: cover;bottom:0;left:70px;}
+.paopao{font-size:32px;position: absolute;top:-32px;}
