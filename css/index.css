@@ -127,36 +127,51 @@ a {
 /*详细技能说明*/
 .b3-right{width: 682px;height: 700px;display: inline-block;vertical-align: top;position: relative;}
 .b3-right div{width: 230px;height: 230px;border-radius: 50%;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
-.skill-1{position: absolute;top:70px;left:10px;border:10px solid #F26432;}
+.skill-1{display:none;position: absolute;top:70px;left:10px;border:10px solid #F26432;}
 .b3-right p{position: absolute;top:0;left:0;bottom:0;right:0;width:169px;height:150px;margin:auto;font-size: 16px;line-height: 1.5em;padding: 10px;}
-.skill-2{position: absolute;top:114px;left:300px;border:10px solid #3799D6;}
-.skill-3{position: absolute;top:330px;left:15px;border:10px solid #FDDA3F;}
-.skill-4{position: absolute;top:380px;left:312px;border:10px solid #EA805C;}
+.skill-2{display:none;position: absolute;top:114px;left:300px;border:10px solid #3799D6;}
+.skill-3{display:none;position: absolute;top:330px;left:15px;border:10px solid #FDDA3F;}
+.skill-4{display:none;position: absolute;top:380px;left:312px;border:10px solid #EA805C;}
 
 /*第四页内容*/
 /*上*/
-.b4-top{width: 100%;height: 330px;}
-.timeline-top{width: 250px;height: 250px;margin:80px 0 0 0;vertical-align: bottom;display:inline-block;position: relative;}
-.first-top{margin-left: 38px;}
-.timeline-top-time{width: 150px;text-align: center;font-size: 14px;display:inline-block;}
+.b4-top{width: 100%;height: 330px;position: relative;}
+.work-1,.work-2,.work-3,.work-4,.work-5{display:none;position:absolute;width: 250px;height: 250px;vertical-align: bottom;}
+.work-1{top:100px;left:100px;}
+.work-2{top:42px;left:300px;}
+.work-3{top:100px;left:500px;}
+.work-4{top:42px;left:690px;}
+.work-5{top:100px;left:860px;}
+
+.point-1,.point-2,.point-3,.point-4,.point-5,.point-6{display:none;position:absolute; width: 24px; height: 40px;}
+.point-1{ top:294px;left:161px;}
+.point-2{ top:0;left:374px;}
+.point-3{ top:294px;left:580px;}
+.point-4{ top:0;left:764px;}
+.point-5{ top:294px;left:938px;}
+.point-6{ top:294px;left:1100px;}
+
+
+.time-1,.time-2,.time-3,.time-4,.time-5{display:none;position:absolute;width: 150px;text-align: center;font-size: 14px;}
+.time-1{top:0;left:100px;}
+.time-2{bottom:0;left:310px;}
+.time-3{top:0;left:518px;}
+.time-4{bottom:0;left:700px;}
+.time-5{top:0;left:876px;}
+
 .work{width: 160px;vertical-align: middle;display:inline-block;font-size: 14px;text-align: center;border-right: 2px dashed #989898; padding-right: 2px;}
 .work span{ font-size: 16px; color: #2196F3;font-weight: 900;}
 .skills{width: 80px;vertical-align: middle;display:inline-block;font-size: 14px;}
 .skills li{padding-left: 10px;}
-.point-up{ width: 33px; height: 52px;top:204px;left: 102px; position: absolute;}
 /*中*/
-.b4-middle{width: 100%;height: 20px;background:url(../images/timeline.png);background-repeat: repeat-x;}
+.b4-middle{display:none;width: 100%;height: 20px;background:url(../images/timeline.png);background-repeat: repeat-x;}
 /*下*/
-.b4-bottom{width: 100%;height: 300px;}
-.timeline-bottom{width: 250px;height: 250px;margin:0;vertical-align: top;display:inline-block;position: relative;}
-.timeline-bottom-time{width: 150px;text-align: center;font-size: 14px;display:inline-block;}
-.first-bottom{margin-left: 82px;}
-.work-2{width: 160px;margin-top: 60px;vertical-align: middle;display:inline-block;font-size: 14px;text-align: center;border-right: 2px dashed #989898; padding-right: 2px;}
-.work-2 span{ font-size: 16px; color: #2196F3;font-weight: 900;}
-.skills-2{width: 80px;vertical-align: middle;display:inline-block;font-size: 14px;}
-.skills-2 li{padding-left: 10px;}
-.point-down{ width: 33px; height: 52px;top:2px;left: 115px; position: absolute;}
-.say{width: 230px;height: 230px;position:absolute;top:370px;left:940px;background: url("../images/say.png");background-repeat: no-repeat;padding: 158px 6px 10px 1px;text-align: center;font-size: 16px; color: #FFFFFF;}
+.b4-bottom{width: 100%;height: 300px;position: relative;}
+.work-s{width: 160px;vertical-align: middle;display:inline-block;font-size: 14px;text-align: center;border-right: 2px dashed #989898; padding-right: 2px;}
+.work-s span{ font-size: 16px; color: #2196F3;font-weight: 900;}
+.skills-s{width: 80px;vertical-align: middle;display:inline-block;font-size: 14px;}
+.skills-s li{padding-left: 10px;}
+.say{display:none;width: 230px;height: 230px;position:absolute;top:10px;left:940px;background: url("../images/say.png");background-repeat: no-repeat;padding: 158px 6px 10px 1px;text-align: center;font-size: 16px; color: #FFFFFF;}
 
 
 /*第五页的内容*/
@@ -167,9 +182,24 @@ a {
 .prod-pic1 {top:10px;left:50px;z-index: 10;}
 .prod-pic2 {top:175px;left:80px;z-index: 9;}
 .prod-pic3 {top:350px;left:110px;z-index: 8;}
+.pic-changed{
+    -moz-transition: all .6s ease 0.1s;
+    -webkit-transition: all .6s ease 0.1s;
+    -o-transition: all .6s ease 0.1s;
+    transition: all .6s ease 0.1s;
+}
 .prod-word{width: 380px;height: 512px;padding:28px 20px;display: inline-block;vertical-align: top;text-align: left;line-height: 2;font-size: 16px;}
 .prod-word p{font-size: 18px;font-weight: 900;color:#392121;}
 .prod-word li{list-style-type: disc;}
+.pic-changed:hover{
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 20;
+   /* top:175px;
+    left:80px;*/
+}
 
 /*第六页的内容*/
 .contacts{width: 500px;height: 365px;border-radius:18px;margin: 0 auto;margin-top: 100px;background: url('../images/card.png');background-repeat: no-repeat;-moz-box-shadow: 10px 10px 5px #888888; -webkit-box-shadow: 10px 10px 5px #888888;box-shadow: 10px 10px 5px #888888;}
@@ -190,6 +220,7 @@ a {
 
 /*小动画，飘方块*/
 .iconfont{font-size:32px;font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale;}
-.container-pao{width:70px;height: 70px;position: relative;left:16%;top:70%;}
+.container-pao-1{width:70px;height: 70px;position: relative;left:16%;top:70%;}
+.container-pao-2{width:70px;height: 70px;position: absolute;right:26%;top:70%;}
 .pao{width: 61px;height: 68px; position: absolute;background-size: cover;bottom:0;left:70px;}
 .paopao{font-size:32px;position: absolute;top:-32px;}

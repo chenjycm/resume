@@ -9,9 +9,9 @@ $(document).ready(function() {
 
 			// 设置飞入动画
 			afterLoad: function(anchorLink, index){
+				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 				if(index == 1){
 					console.log('1rd page');
-					
 				}
 				if(index == 2){
 					console.log('2rd page');
@@ -27,11 +27,16 @@ $(document).ready(function() {
 				}
 				if(index == 3){
 					console.log('3rd page');
-					$('.htmllogo').delay(1000).fadeIn(4500);
-					$('.csslogo').delay(1000).fadeIn(3000);
-					$('.jslogo').delay(1000).fadeIn(4000);
-					$('.jquerylogo').delay(1000).fadeIn(6000);
-					$('.reactlogo').delay(1000).fadeIn(5000);
+					$('.htmllogo').delay(500).fadeIn(1500);
+					$('.csslogo').delay(500).fadeIn(3000);
+					$('.jslogo').delay(500).fadeIn(2000);
+					$('.jquerylogo').delay(500).fadeIn(3000);
+					$('.reactlogo').delay(500).fadeIn(1000);
+					
+					$('.skill-1').delay(500).fadeIn().addClass('animated flipInX').one(animationEnd,function(){$(this).removeClass('animated flipInX');});
+					$('.skill-2').delay(500).fadeIn().addClass('animated bounceIn').one(animationEnd,function(){$(this).removeClass('animated bounceIn');});
+					$('.skill-3').delay(500).fadeIn().addClass('animated jello').one(animationEnd,function(){$(this).removeClass('animated jello');});
+					$('.skill-4').delay(500).fadeIn().addClass('animated flipInY').one(animationEnd,function(){$(this).removeClass('animated flipInY');});
 
 					$(function () {
 						$('#bar-1').jqbar({ label: 'HTML/CSS', value: 82, barColor: '#D64747' });
@@ -49,6 +54,60 @@ $(document).ready(function() {
 				}
 				if(index == 4){
 					console.log('4rd page');
+					$('.b4-middle').fadeIn(1500);
+					// $('.point-up').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){$(this).removeClass('animated fadeInDown');});
+					// $('.point-down').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){$(this).removeClass('animated fadeInUp');});
+					$('.point-1').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInDown');
+						$('.time-1').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+							$(this).removeClass('animated fadeInUp');
+							$('.work-1').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+								$(this).removeClass('animated bounceIn');
+							});
+						});
+					});
+					$('.point-2').delay(1000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInUp');
+						$('.time-2').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+							$(this).removeClass('animated fadeInDown');
+							$('.work-2').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+								$(this).removeClass('animated bounceIn');
+							});
+						});
+					});
+					$('.point-3').delay(2000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInDown');
+						$('.time-3').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+							$(this).removeClass('animated fadeInUp');
+							$('.work-3').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+								$(this).removeClass('animated bounceIn');
+							});
+						});
+					});
+					$('.point-4').delay(3000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInUp');
+						$('.time-4').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+							$(this).removeClass('animated fadeInDown');
+							$('.work-4').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+								$(this).removeClass('animated bounceIn');
+							});
+						});
+					});
+					$('.point-5').delay(4000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInDown');
+						$('.time-5').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+							$(this).removeClass('animated fadeInUp');
+							$('.work-5').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+								$(this).removeClass('animated bounceIn');
+							});
+						});
+					});
+					$('.point-6').delay(5000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+						$(this).removeClass('animated fadeInDown');
+						$('.say').fadeIn().addClass('animated rubberBand').one(animationEnd,function(){
+							$(this).removeClass('animated rubberBand');
+						});
+					});
 					// $('.section4').find('p').fadeIn(2000);
 				}
 				if(index == 5){
@@ -68,22 +127,15 @@ $(document).ready(function() {
 					console.log('leave 2rd');
 					$('.b2-me').delay(500).animate({left:'-120%'},1000,'easeOutExpo');
 					$('.b2-text').delay(500).animate({right:'-120%'},1000,'easeOutExpo');
-					$('.box2-bbar-1,bar-1,bar-1,bar-1,bar-1ottom').fadeOut(2000);
-
-
-					// $('.section2').find('.b2-text').delay(500).animate({
+					$('.box2-bbar-1,bar-1,bar-1,bar-1,bar-1ottom').fadeOut(500);
+					$('.box2-bottom').fadeOut(500);
+					// delay(500).animate({
 					// 	right: '-120%'
 					// }, 1500, 'easeOutExpo');
 				}
 				if(index == '3'){
 					console.log('leave 3rd');
-					$('.htmllogo').fadeOut(100);
-					$('.csslogo').fadeOut(100);
-					$('.jslogo').fadeOut(100);
-					$('.jquerylogo').fadeOut(100);
-					$('.reactlogo').fadeOut(100);
-
-
+					$('.htmllogo,.csslogo,.jslogo,.jquerylogo,.reactlogo,.skill-1,.skill-2,.skill-3,.skill-4').css('display','none');
 					$('#bar-1,#bar-2,#bar-3,#bar-4,#bar-5,#bar-6').children().remove();
 
 					// $('.section3').find('p').delay(500).animate({
@@ -92,7 +144,7 @@ $(document).ready(function() {
 				}
 				if(index == '4'){
 					console.log('leave 4rd');
-					// $('.section4').find('p').fadeOut(2000);
+					$('.b4-middle,.work-1,.work-2,.work-3,.work-4,.work-5,.point-1,.point-2,.point-3,.point-4,.point-5,.point-6,.time-1,.time-2,.time-3,.time-4,.time-5,.say').css('display','none');
 				}
 				if(index == '5'){
 					console.log('leave 5rd');
@@ -137,7 +189,7 @@ $(document).ready(function() {
 	        cxt.lineJoin = "round";
 	        cxt.stroke();
 	});
-	// 第三页柱状条动画   
+	// 第三页柱状条动画
 	// $(document).ready(function () {
 	// 	$('#bar-1').jqbar({ label: 'HTML/CSS', value: 82, barColor: '#D64747' });
 	// 	$('#bar-2').jqbar({ label: 'Javascript', value: 78, barColor: '#FF681F' });
@@ -146,7 +198,7 @@ $(document).ready(function() {
 	// 	$('#bar-5').jqbar({ label: 'C/C++/VB', value: 60, barColor: '#939393' });
 	// 	$('#bar-6').jqbar({ label: 'English', value: 90, barColor: '#3a89c9' });
 	// });
-	
+
 	$(function(){
         paopao();
     });
