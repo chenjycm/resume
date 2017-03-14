@@ -27,17 +27,19 @@ $(document).ready(function() {
 				}
 				if(index == 3){
 					console.log('3rd page');
-					$('.htmllogo').delay(500).fadeIn(1500);
-					$('.csslogo').delay(500).fadeIn(3000);
-					$('.jslogo').delay(500).fadeIn(2000);
-					$('.jquerylogo').delay(500).fadeIn(3000);
-					$('.reactlogo').delay(500).fadeIn(1000);
+					$('.htmllogo').delay(1500).fadeIn();
+					$('.csslogo').delay(2000).fadeIn();
+					$('.jslogo').delay(1000).fadeIn();
+					$('.jquerylogo').delay(2000).fadeIn();
+					$('.reactlogo').delay(1500).fadeIn();
 					
 					$('.skill-1').delay(500).fadeIn().addClass('animated flipInX').one(animationEnd,function(){$(this).removeClass('animated flipInX');});
 					$('.skill-2').delay(500).fadeIn().addClass('animated bounceIn').one(animationEnd,function(){$(this).removeClass('animated bounceIn');});
 					$('.skill-3').delay(500).fadeIn().addClass('animated jello').one(animationEnd,function(){$(this).removeClass('animated jello');});
 					$('.skill-4').delay(500).fadeIn().addClass('animated flipInY').one(animationEnd,function(){$(this).removeClass('animated flipInY');});
+					
 
+					//第三页柱状条动画
 					$(function () {
 						$('#bar-1').jqbar({ label: 'HTML/CSS', value: 82, barColor: '#D64747' });
 						$('#bar-2').jqbar({ label: 'Javascript', value: 78, barColor: '#FF681F' });
@@ -54,7 +56,7 @@ $(document).ready(function() {
 				}
 				if(index == 4){
 					console.log('4rd page');
-					$('.b4-middle').fadeIn(1500);
+					$('.b4-middle').fadeIn(1000);
 					// $('.point-up').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){$(this).removeClass('animated fadeInDown');});
 					// $('.point-down').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){$(this).removeClass('animated fadeInUp');});
 					$('.point-1').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
@@ -189,15 +191,8 @@ $(document).ready(function() {
 	        cxt.lineJoin = "round";
 	        cxt.stroke();
 	});
-	// 第三页柱状条动画
-	// $(document).ready(function () {
-	// 	$('#bar-1').jqbar({ label: 'HTML/CSS', value: 82, barColor: '#D64747' });
-	// 	$('#bar-2').jqbar({ label: 'Javascript', value: 78, barColor: '#FF681F' });
-	// 	$('#bar-3').jqbar({ label: 'jQuery', value: 84, barColor: '#ea805c' });
-	// 	$('#bar-4').jqbar({ label: 'React', value: 50, barColor: '#88bbc8' });
-	// 	$('#bar-5').jqbar({ label: 'C/C++/VB', value: 60, barColor: '#939393' });
-	// 	$('#bar-6').jqbar({ label: 'English', value: 90, barColor: '#3a89c9' });
-	// });
+
+	
 
 	$(function(){
         paopao();

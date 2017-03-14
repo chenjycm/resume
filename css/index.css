@@ -67,7 +67,7 @@ a {
 .head {height: 46px;width:46px; float: left;margin: 10px;border-radius: 50%; -webkit-border-radius:50%; vertical-align: middle;}
 .social-network {height: 46px;width:46px;float: right;border-radius: 50%; -webkit-border-radius:50%;padding-top: 10px; padding-bottom: 10px;}
 .section {  font: 18px "Microsoft Yahei"; color: #393939;}
-.box1 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/11.jpg); overflow: hidden;}
+.box1 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/12.jpg); overflow: hidden;}
 .box2 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/bg6.png); overflow: hidden;}
 .box3 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/bg3.png); overflow: hidden;}
 .box4 { position: relative; width:100%; height: 100%; margin: 0 auto; background-image: url(../images/bg4.png); overflow: hidden;}
@@ -90,9 +90,7 @@ a {
 .b2-text img{ width: 20px; height: 20px; margin-left:15px;vertical-align: middle;}
 .b2-text a{vertical-align: middle;margin-left:15px;}
 .box2-bottom {border-top:2px dashed gray;margin-top:20px;text-align: center;position: relative;display: none;}
-/*.box2-bottom p{width:23px;height:120px;display:inline-block; font-size:23px;}
-*/
-/*.box2-bottom ul{display: inline-block;}*/
+
 .box2-bottom li{ width: 220px;height: 160px;margin:10px 0 0 0;border:3px solid #003359;border-radius: 20px;padding:4px;vertical-align:middle;list-style-type: none;display: inline-block;text-align: left;font-size: 17px;
     padding: 5px 5px 5px 11px;
     line-height: 1.5; }
@@ -137,11 +135,11 @@ a {
 /*上*/
 .b4-top{width: 100%;height: 330px;position: relative;}
 .work-1,.work-2,.work-3,.work-4,.work-5{display:none;position:absolute;width: 250px;height: 250px;vertical-align: bottom;}
-.work-1{top:100px;left:100px;}
+.work-1{top:90px;left:100px;}
 .work-2{top:42px;left:300px;}
-.work-3{top:100px;left:500px;}
+.work-3{top:90px;left:500px;}
 .work-4{top:42px;left:690px;}
-.work-5{top:100px;left:860px;}
+.work-5{top:90px;left:860px;}
 
 .point-1,.point-2,.point-3,.point-4,.point-5,.point-6{display:none;position:absolute; width: 24px; height: 40px;}
 .point-1{ top:294px;left:161px;}
@@ -183,10 +181,10 @@ a {
 .prod-pic2 {top:175px;left:80px;z-index: 9;}
 .prod-pic3 {top:350px;left:110px;z-index: 8;}
 .pic-changed{
-    -moz-transition: all .6s ease 0.1s;
-    -webkit-transition: all .6s ease 0.1s;
-    -o-transition: all .6s ease 0.1s;
-    transition: all .6s ease 0.1s;
+    -moz-transition: all .4s ease ;
+    -webkit-transition: all .4s ease ;
+    -o-transition: all .4s ease ;
+    transition: all .4s ease ;
 }
 .prod-word{width: 380px;height: 512px;padding:28px 20px;display: inline-block;vertical-align: top;text-align: left;line-height: 2;font-size: 16px;}
 .prod-word p{font-size: 18px;font-weight: 900;color:#392121;}
@@ -212,8 +210,9 @@ a {
 
 /*按钮样式*/
 .button{width: 90px;line-height: 17px;text-align: center;color: #fff;font-family:"Microsoft Yahei";text-shadow:1px 1px 1px #333;border-radius: 5px;margin:0;position: relative;overflow: hidden;}
-.button.black{border:1px solid #333;box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;background: -webkit-linear-gradient(top,#656565,#4c4c4c);background: -moz-linear-gradient(top,#656565,#4a4a4a);background: linear-gradient(top,#656565,#4a4a4a);}
-.black:hover{background: -webkit-linear-gradient(top,#818181,#575757);background: -moz-linear-gradient(top,#818181,#575757);background: linear-gradient(top,#818181,#575757);}
+.button.black{border:1px solid #333;box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;background: -webkit-linear-gradient(top,#656565,#4c4c4c);background:#656565;background: -moz-linear-gradient(top,#656565,#4a4a4a);background: linear-gradient(top,#656565,#4a4a4a); }
+/*:root .button.black{filter:none;} */
+.black:hover{cursor: pointer;background: -webkit-linear-gradient(top,#818181,#575757);background: -moz-linear-gradient(top,#818181,#575757);background: linear-gradient(top,#818181,#575757);}
 .black:active{top:1px;box-shadow: 0 1px 3px #111 inset,0 3px 0 #fff;background: -webkit-linear-gradient(top,#424242,#575757);background: -moz-linear-gradient(top,#424242,#575757);background: linear-gradient(top,#424242,#575757);}
 
 
