@@ -70,17 +70,17 @@ html, body {
     margin-top: -38px;
 }
 .fp-controlArrow.fp-prev {
-    top: 90%;
+    top: 70%;
     left: 0;
     width: 0;
     border-width: 14px 14px 14px 0;
-    border-color: transparent #b9afae transparent transparent;
+    border-color: transparent #827675 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    top: 90%;
+    top: 70%;
     right: 0;
     border-width: 14px 0 14px 14px;
-    border-color: transparent transparent transparent #b9afae;
+    border-color: transparent transparent transparent #827675;
 }
 .fp-scrollable {
     overflow: scroll;

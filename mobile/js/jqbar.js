@@ -3,9 +3,9 @@
         jqbar: function (options) {
             var settings = $.extend({
                 animationSpeed: 1600,
-                barLength: 280,
+                barLength: 250,
                 orientation: 'h',
-                barWidth: 20,
+                barWidth: 18,
                 barColor: 'red',
                 label: '&nbsp;',
                 value: 1000
@@ -65,7 +65,7 @@
                                 var percent = parseInt(currentWidth / settings.barLength * 100);
                                 if (isNaN(percent))
                                     percent = 0;
-                                progressContainer.find('.bar-percent').html(percent + ' ');
+                                progressContainer.find('.bar-percent').html(percent +'');
                             }
                         });
                     }

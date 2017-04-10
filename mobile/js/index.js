@@ -13,6 +13,9 @@ $(document).ready(function() {
 		  window.location.href = 'http://115.28.10.122/resume/pc/index.html';
 		  }
 	})();
+
+
+	document.documentElement.style.fontSize = window.screen.width / 3.75 + 'px';
 	$(function(){
 		// $(window).scrollTop(0);
 		$('#dowebok').fullpage({
@@ -77,8 +80,8 @@ $(document).ready(function() {
 				}
 				if(index == 6){
 					console.log('6rd page');
+					$('#down').hide(10);
 					$('#top-title').text('联系方式');
-					$('#down').hide();
 					// $('.section4').find('p').fadeIn(2000);
 				}
 			},
