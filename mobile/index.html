@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>个人简历-移动版</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<style>
+
+	body{font-size:62.5%;font-family:"Microsoft YaHei",Arial; overflow-x:hidden; overflow-y:hidden;} 
+
+	.viewport{ max-width:640px; min-width:300px; margin:0 auto;} 
+
+	</style>
+
+ </head>
+
+
+
+<body>
+
+	<div class="banner-top">
+		<img class="head" src="images/head.png"/>
+		<!-- <div class="re" alt="Resume-ChenJianming">简历</div> -->
+		<div id="top-title"></div>
+		<a href="http://blog.sina.com.cn/nibirus" target="_blank"><img class="social-network" src="images/sinablog.png" alt="新浪博客"></a>
+		<a href="http://weibo.com/chenjianming" target="_blank"><img class="social-network" src="images/sinaweibo.png" alt="新浪微博"></a>
+		<a href="https://github.com/chenjycm" target="_blank"><img class="social-network" src="images/github.png" alt="GitHub"></a>
+
+	</div>
+	<div id="down">
+		<canvas id="downCanvas" width="50" height="50">你的浏览器不支持canvas，请下载更新版本的浏览器
+		</canvas>
+	</div>
+
+	<!-- <ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+		<li data-menuanchor="page2"><a href="#page2">基本信息</a></li>
+		<li data-menuanchor="page3"><a href="#page3">我的技能</a></li>
+		<li data-menuanchor="page4"><a href="#page4">工作实习</a></li>
+		<li data-menuanchor="page5"><a href="#page5">我的作品</a></li>
+		<li data-menuanchor="page6"><a href="#page6">联系方式</a></li>
+	</ul> -->
+
+	<div id="dowebok">
+	
+		<div class="section">			<!-- 第一页 -->
+			<div class="box1">
+				<div class="b1-text">
+					<p class="b1-text-resume">个人简历</p>
+					<!-- <p class="b1-text-name">陈建名</p> -->
+					<p class="b1-text-work">应聘岗位：前端工程师</p>
+
+				</div>
+				<div class="b1-me"></div>
+				<ul class="b1-information">
+						<li><img src="images/user.png"><a>姓名：陈建名</a></li>
+						<!-- <li><img src="images/home.png"><a>家乡：四川宜宾</a></li> -->
+						<li><img src="images/win.png"><a>学历：硕士</a></li>
+						<li><img src="images/world.png"><a>学校：北京邮电大学</a></li>
+						<li><img src="images/phone.png"><a>英语：CET-6</a></li>
+						<li><img src="images/mail.png"><a>兴趣：运动、旅游</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="section">
+			<div class="box2">					<!-- 第二页 -->
+				<div class="b2-box">
+					<div class="b2-box-leftline"></div>
+					<div class="b2-box-passages">
+						<div class="passage-1"><p class="passage-p">在求职路上不断探索的我，2015年大学毕业成为银行电子银行部管培生，由于部门编制已满轮完岗只能做营销。追求技术的理想还在么？</p></div>
+						<div class="passage-2"><p class="passage-p">2016年，重新思考自己的未来，寻找到自己的快乐才是生活和工作向前走的动力。重新拾起技术，coding给我带来了满足感。</p></div>
+						<div class="passage-3"><p class="passage-p">2017年：</br>心之所向，素履以往；</br>生如逆旅，一苇以航。</br>Fllowing My Heart!相信未来的一切会更佳美好。</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box3">     <!--  第三页内容 -->
+				<div class="b3-box">
+					<div class="container">
+						<div class="six columns">
+							<div class="bars MT30">
+								<div id="bar-1">
+								</div>
+								<div id="bar-2">
+								</div>
+								<div id="bar-3">
+								</div>
+								<div id="bar-4">
+								</div>
+								<div id="bar-5">
+								</div>
+								<div id="bar-6">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="b3-box-skills">
+						<div class="skill-1">深刻理解Web标准，熟悉HTML盒模型和各类布局方式，能够根据需求搭配css实现页面布局和交互效果等较复杂的布局。</div>
+						<div class="skill-2">熟练运用css及css3新属性，注重浏览器兼容性，掌握css预编译器Less及Sass，正在学习和实践响应式布局。</div>
+						<div class="skill-1">对闭包、作用域、面向对象编程思想有一定了解，能够熟练编写JavaScript原生代码，掌握jQuery，注重性能优化。</div>
+						<div class="skill-2">熟练使用Sublime、chrome等开发调试工具，熟悉Gulp node.js等构建工具，正在深入学习vue.js、React.js。</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box4"> 		<!-- 	第四页内容 -->
+				<div class="slide">
+					<div class="b4-work">
+						<div class="b4-title">工作经历</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">成都农商银行</span></br>2015.07~2017.03&nbsp&nbsp<电子银行管培生><ul class="b4-div-ul"><li>学习支付平台建设需求文档，参与代扣系统测试。</li><li>在业务部轮学习柜面、小微及公司业务；</li><li>学习金融机构及第三方支付的相关文件；</li><li>参与电子银行项目，对他行智能银行进行调研和分析。</li>
+								</ul>
+								<div class="b4-p">关键词：金融、子商务、支付</div>
+							</div>
+						</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">学习前端</span></br>2016.11~至今&nbsp&nbsp<ul class="b4-div-ul"><li>大学期间学习了计算机基础课程，为前端学习提供了坚实的基础;</li><li>在繁忙的工作之余自学前端技术Html/CSS/JS/JQ，以及前端框架vue.js/React.js；</li><li>学习金融机构及第三方支付的相关文件；</li><li>完成了网站首页及电子简历两个项目</li>
+								</ul>
+								<div class="b4-p">关键词：前端技术</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="b4-work">
+						<div class="b4-title">实习经历</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">北京久其软件股份有限公司</span></br>011.03~2011.06&nbsp&nbsp<系统实施工程师><ul class="b4-div-ul"><li>进行电信集团统计系统的搭建，维护系统稳定</li><li>管理Oracle数据库，定期对各省市数据进行提取和推送</li><li>通过指标代码及计算方法，从数据库提取数据制作数据统计表、财务报表、数据分析表等。</li>
+								</ul>
+								<div class="b4-p">关键词：SQL、EXCEL、Oracle、Weblogic</div>
+							</div>
+						</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">北京全点通科技有限公司</span></br>2013.05~2014.05&nbsp&nbsp<技术支持/客户经理><ul class="b4-div-ul"><li>学习通信技术，利用TCP/IP技术进行专线测试与维护，配置H3C路由器；</li><li>整理业务流程，分析流程中的关键路径和难点，优化和改进业务流程；</li><li>分析客户需求，协助公司客户开通专线业务。</li>
+								</ul>
+								<div class="b4-p">关键词：TCP/IP、沟通技能、障碍处理</div>
+							</div>
+						</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">E+教育创业团队</span></br>2014.07~2014.010&nbsp&nbsp<运营策划、网页制作><ul class="b4-div-ul"><li>负责“E+”微信公众平台的运营；</li><li>学习前端HTML/CSS，网站设计，并协助美工和开发人员完成网站的开发。</li><li>对E+商业模式进行探索性调研，进行同类产品的分析，课程设计和活动策划等。</li>
+								</ul>
+								<div class="b4-p">关键词：HTML、CSS、JavaScript</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="b4-work">
+						<div class="b4-title">教育经历</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">北京邮电大学</span></br>2007.09~2011.06&nbsp&nbsp<本科></br>专业：信息管理与信息系统
+								<ul class="b4-div-ul">
+								<li>熟悉C、C++、SQL、VB等语言；</li><li>熟悉SAS、SPSS、Visio、Mindmanager、Matlab、Mathematica等应用软件.</li>
+								</ul>
+								<div class="b4-p">关键词：语言基础、软件应用</div>
+							</div>
+						</div>
+						<div class="b4-detail">
+							<div class="b4-div">
+								<span class="b4-div-span">北京邮电大学</span></br>2012.09~2015.04&nbsp&nbsp<研究生></br>专业：管理科学与工程（信息化与信息技术应用方向）
+								<ul class="b4-div-ul">
+								<li>北京市海淀区移动向导项目、海淀旅游知识开放共享平台项目，项目助理。</li><li>进行国家社会科学基金项目的研究，撰写基于Agent建模的相关论文；负责项目汇报PPT的制作,发表《基于Agent的建模在经济管理中的应用研究综述》（CSSCI扩展）</li>
+								</ul>
+								<div class="b4-p">关键词：APP、PPT、大数据、文献研究</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box5">			<!-- 第五页内容 -->
+			 	<div class="slide">
+					<div class="b5-mp">
+						<div class="b5-title">作品一</div>
+						<div class="b5-mp-pic"></div>
+						<div class="b5-detail">
+							<p>招聘直播网 　<button class="button black" onclick="window.open('http://115.28.10.122/cm/index.html')">点击前往</button>　<button class="button black" onclick="window.open('http://115.28.10.122/cm/list.html')">后台管理</button></p>
+						 		<span>Skills：</span>HTML/CSS3、JavaScript、jQuery、Ajax
+						 		<p>项目描述：</p>仿照某招聘网站的直播网，使用HTML/CSS对页面进行搭建，实现用户信息注册、留言，提供前后台的数据交互及管理。<p>实现技术：</p>
+						 		<ul>
+									<li>利用css+html等高度还原页面设计图</li>
+									<li>利用js、jQuery实现页面的特效</li>
+									<li>利用Ajax实现前后端的数据交互</li>
+								</ul>
+								<p>项目收获：</p>
+								<ul>
+									<li>熟悉了HTML/CSS、DOM的相关属性和功能</li>
+									<li>锻炼js和jQuery能力，并实现特定功能模块</li>
+									<li>对前端工程师的工作流程有了一定的认识，为未来的工作积累了经验</li>
+								</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="slide">
+					<div class="b5-mp">
+						<div class="b5-title">作品二</div>
+						<div class="b5-mp-pic-2"></div>
+						<div class="b5-detail">
+					 		<p>网络简历 　<button class="button black" onclick="window.open('http://115.28.10.122/resume')">点击前往</button></p>
+					 		<span>Skills：</span>HTML/CSS3、JavaScript、jQuery、动画
+					 		<p>项目描述：</p>构建本人的网络简历，为实现比纸质版更好的展示效果，并使用第三方插件实现了一些实用的动画特效<p>实现技术：</p>
+					 		<ul>
+								<li>利用HTML/CSS及第三方插件实现页面框架</li>
+								<li>利用js、jQuery、css3实现页面的特效</li>
+							</ul>
+							<p>项目收获：</p>
+							<ul>
+								<li>自己设计网站，并使用PS切图</li>
+								<li>熟悉了css3标准，解决常见兼容性问题</li>
+								<li>熟悉js、jQuery</li>
+							</ul>
+		 				</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="box6">			<!-- 第六页内容 -->
+				<div class="b6-contact">
+					<div class="b6-contact-picbox"><img class="b6-contact-pic" src="./images/wechat.jpg"/></div>
+					<div class="b6-contact-information">
+						<p>陈&nbsp建&nbsp名</p>
+						<ul>
+							<li><span>邮箱：</span>chenjycm@163.com</li>
+							<li><span>电话：</span>18108190419</li>
+							<li><span>微信：</span>154115435</li>
+							<li><span>Q  Q：</span>154115435</li>
+							<li><span>GitHub:</span><button class="button black" onclick="window.open('https://github.com/chenjycm/')">GitHub</button></li>
+							<li><span>微博：</span><button class="button black" onclick="window.open('http://weibo.com/chenjianming')">新浪微博</button></li>
+							<li><span>博客：</span><button class="button black" onclick="window.open('http://blog.sina.com.cn/nibirus')">新浪博客</button></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js"></script>
+ <script src="js/jqbar.js" type="text/javascript"></script>
+<!-- <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+
+
+</body>
+
+</html>

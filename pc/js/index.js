@@ -1,4 +1,18 @@
 $(document).ready(function() {
+	(function browserRedirect(){
+		  var sUserAgent = navigator.userAgent.toLowerCase();
+		  var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+		  var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+		  var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+		  var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+		  var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+		  var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+		  var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+		  var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+		  if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid ){
+		  window.location.href = 'http://115.28.10.122/resume/mobile/index.html';
+		  }
+	})();
 	$(function(){
 		// $(window).scrollTop(0);
 		$('#dowebok').fullpage({
@@ -7,6 +21,8 @@ $(document).ready(function() {
 			menu: '#menu',
 			// loopBottom: true
 
+
+		    
 			// 设置飞入动画
 			afterLoad: function(anchorLink, index){
 				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -59,57 +75,58 @@ $(document).ready(function() {
 					$('.b4-middle').fadeIn(1000);
 					// $('.point-up').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){$(this).removeClass('animated fadeInDown');});
 					// $('.point-down').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){$(this).removeClass('animated fadeInUp');});
-					$('.point-1').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					$('.point-1,.point-2,.point-3,.point-4,.point-5,.point-6').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
 						$(this).removeClass('animated fadeInDown');
-						$('.time-1').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+						$('.time-1,.time-2,.time-3,.time-4,.time-5,.time-6').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
 							$(this).removeClass('animated fadeInUp');
-							$('.work-1').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+							$('.work-1,.work-2,.work-3,.work-4,.work-5,.work-6').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
 								$(this).removeClass('animated bounceIn');
+								$('.say').fadeIn().addClass('animated rubberBand').one(animationEnd,function(){
+									$(this).removeClass('animated rubberBand');
+								});
 							});
 						});
 					});
-					$('.point-2').delay(1000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
-						$(this).removeClass('animated fadeInUp');
-						$('.time-2').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
-							$(this).removeClass('animated fadeInDown');
-							$('.work-2').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
-								$(this).removeClass('animated bounceIn');
-							});
-						});
-					});
-					$('.point-3').delay(2000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
-						$(this).removeClass('animated fadeInDown');
-						$('.time-3').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
-							$(this).removeClass('animated fadeInUp');
-							$('.work-3').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
-								$(this).removeClass('animated bounceIn');
-							});
-						});
-					});
-					$('.point-4').delay(3000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
-						$(this).removeClass('animated fadeInUp');
-						$('.time-4').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
-							$(this).removeClass('animated fadeInDown');
-							$('.work-4').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
-								$(this).removeClass('animated bounceIn');
-							});
-						});
-					});
-					$('.point-5').delay(4000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
-						$(this).removeClass('animated fadeInDown');
-						$('.time-5').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
-							$(this).removeClass('animated fadeInUp');
-							$('.work-5').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
-								$(this).removeClass('animated bounceIn');
-							});
-						});
-					});
-					$('.point-6').delay(5000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
-						$(this).removeClass('animated fadeInDown');
-						$('.say').fadeIn().addClass('animated rubberBand').one(animationEnd,function(){
-							$(this).removeClass('animated rubberBand');
-						});
-					});
+					// $('.point-2').delay(1000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+					// 	$(this).removeClass('animated fadeInUp');
+					// 	$('.time-2').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					// 		$(this).removeClass('animated fadeInDown');
+					// 		$('.work-2').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+					// 			$(this).removeClass('animated bounceIn');
+					// 		});
+					// 	});
+					// });
+					// $('.point-3').delay(2000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					// 	$(this).removeClass('animated fadeInDown');
+					// 	$('.time-3').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+					// 		$(this).removeClass('animated fadeInUp');
+					// 		$('.work-3').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+					// 			$(this).removeClass('animated bounceIn');
+					// 		});
+					// 	});
+					// });
+					// $('.point-4').delay(3000).fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+					// 	$(this).removeClass('animated fadeInUp');
+					// 	$('.time-4').fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					// 		$(this).removeClass('animated fadeInDown');
+					// 		$('.work-4').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+					// 			$(this).removeClass('animated bounceIn');
+					// 		});
+					// 	});
+					// });
+					// $('.point-5').delay(4000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					// 	$(this).removeClass('animated fadeInDown');
+					// 	$('.time-5').fadeIn().addClass('animated fadeInUp').one(animationEnd,function(){
+					// 		$(this).removeClass('animated fadeInUp');
+					// 		$('.work-5').fadeIn().addClass('animated bounceIn').one(animationEnd,function(){
+					// 			$(this).removeClass('animated bounceIn');
+					// 		});
+					// 	});
+					// });
+					// $('.point-6').delay(5000).fadeIn().addClass('animated fadeInDown').one(animationEnd,function(){
+					// 	$(this).removeClass('animated fadeInDown');
+						
+					// });
 					// $('.section4').find('p').fadeIn(2000);
 				}
 				if(index == 5){
@@ -160,6 +177,19 @@ $(document).ready(function() {
 			// 飞入动画设置结束
 		});
 
+		$(window).resize(function(){
+	        autoScrolling();
+	    });
+
+	    function autoScrolling(){
+	        var $ww = $(window).width();
+	        if($ww < 1024){
+	            $.fn.fullpage.setAutoScrolling(false);
+	        } else {
+	            $.fn.fullpage.setAutoScrolling(true);
+	        }
+	    }
+		autoScrolling();
 		// setInterval(function(){			//第五页轮播动画
 	 //        $.fn.fullpage.moveSlideRight();
 	 //    }, 10000);
@@ -194,53 +224,53 @@ $(document).ready(function() {
 
 	
 
-	$(function(){
-        paopao();
-    });
-    //需要的参数
-    var pp = {
-        pl : 0,   //生成的paopao随机的居左的位置
-        color : ["ce4f6d","ca4fce","4f82ce","4fce91","ceca4f"],   //随机添加的颜色
-        c : 0,  //初始化颜色
-        step : 500
-    };
-    function paopao(){
-        //添加元素
-        var html = '<div class="paopao iconfont" style="left: '+ pp.pl + 'px;color: #'+ pp.color[pp.c] +'">&#xe60d;</div>';
-        $(".pao").append(html);
+	// $(function(){
+ //        paopao();
+ //    });
+ //    //需要的参数
+ //    var pp = {
+ //        pl : 0,   //生成的paopao随机的居左的位置
+ //        color : ["ce4f6d","ca4fce","4f82ce","4fce91","ceca4f"],   //随机添加的颜色
+ //        c : 0,  //初始化颜色
+ //        step : 500
+ //    };
+ //    function paopao(){
+ //        //添加元素
+ //        var html = '<div class="paopao iconfont" style="left: '+ pp.pl + 'px;color: #'+ pp.color[pp.c] +'">&#xe60d;</div>';
+ //        $(".pao").append(html);
 
-        //获取颜色
-        pp.c ++;
-        if(pp.c >= pp.color.length){
-            pp.c = 0;
-        }
+ //        //获取颜色
+ //        pp.c ++;
+ //        if(pp.c >= pp.color.length){
+ //            pp.c = 0;
+ //        }
 
-        pp.pl = Math.round(Math.random()*100/3);  //随机位置
+ //        pp.pl = Math.round(Math.random()*100/3);  //随机位置
 
-        //执行动画
-        $(".paopao").each(function () {
+ //        //执行动画
+ //        $(".paopao").each(function () {
 
-            if($(this).index()%2 == 0){
-                pp.step = 100;
-            }else if($(this).index()%3 == 0){
-                pp.step = 200;
-            }else{
-                pp.step = 300;
-            }
+ //            if($(this).index()%2 == 0){
+ //                pp.step = 100;
+ //            }else if($(this).index()%3 == 0){
+ //                pp.step = 200;
+ //            }else{
+ //                pp.step = 300;
+ //            }
 
-            if (!$(this).is(":animated")) {
-                $(this).animate({            //运动
-                    top: "-300px",
-                    fontSize: "60px",
-                    opacity: "0"
-                }, (500-pp.step)*10,
-                function () {
-                    $(this).remove();        //清除元素
-                })
-            }
-        });
-        //定时器
-        setTimeout(paopao,pp.step);
-    }
+ //            if (!$(this).is(":animated")) {
+ //                $(this).animate({            //运动
+ //                    top: "-300px",
+ //                    fontSize: "60px",
+ //                    opacity: "0"
+ //                }, (500-pp.step)*10,
+ //                function () {
+ //                    $(this).remove();        //清除元素
+ //                })
+ //            }
+ //        });
+ //        //定时器
+ //        setTimeout(paopao,pp.step);
+ //    }
 
 });
