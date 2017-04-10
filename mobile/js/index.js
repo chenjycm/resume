@@ -9,7 +9,7 @@ $(document).ready(function() {
 		  var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
 		  var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
 		  var bIsAndroid = sUserAgent.match(/android/i) == 'android';
-		  if(!(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid){
+		  if(!(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid)){
 		  window.location.href = 'http://115.28.10.122/resume/pc/index.html';
 		  }
 	})();
