@@ -100,17 +100,17 @@ a {
 /*第三页的内容*/
 .b3-box{width: 100%; height: 92%; margin: auto; margin-top: .40rem;}
 .jqbar{position: relative;top: .70rem;}
-.jqbar.horizontal span{display: inline-block;margin-left: .01rem;font-size: .11rem;font-weight: bold;}
+.jqbar.horizontal span{display: inline-block;margin-left: .01rem;font-size: .10rem;}
 .jqbar.horizontal .bar-percent{font-size: .11rem;font-weight: bold;height: .10rem;margin-bottom: .04rem;}
-.container{width: 4.00rem;margin: 0 0 .10rem 0; height: 1.86rem;position: relative; color: #FFF;}
-.column, .columns{float: left;display: inline;margin-left: .01rem;margin-right: .04rem;}/*.row{margin-bottom: 20px;}*/
+.container{width: 100%;margin: 0 0 .10rem 0; height: 1.86rem;text-align:center;position: relative; color: #FFF;}
+.column, .columns{text-align: left;width: 3.5rem; height: 1.8rem; margin: auto;display: inline-block;margin-left: .01rem;margin-right: .04rem;}/*.row{margin-bottom: 20px;}*/
 #bar-1{top: .20rem;}
 #bar-2{top: .28rem;}
 #bar-3{top: .36rem;}
 #bar-4{top: .44rem;}
 #bar-5{top: .52rem;}
 #bar-6{top: .60rem;}
-.jqbar.horizontal .bar-label{text-align: right;width: .90rem;vertical-align: middle;}
+.jqbar.horizontal .bar-label{text-align: right;width: .70rem;vertical-align: middle;}
 .bar-level {vertical-align: middle;}
 .b3-box-skills{width: 80%;height: 63%; margin: 0 auto; }
 .skill-1,.skill-2{ width: 1.90rem; margin: auto; padding: .08rem; font-size: .14rem; border-bottom: 0.01rem solid #FFF;display: none;}
