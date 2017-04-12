@@ -72,7 +72,7 @@ a {
 @-webkit-keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 @-o-keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
 @keyframes myMove {  0% {padding-top:30px;}  100% {padding-top:50px;}}
-#down {  position: fixed;z-index: 100;height: 100%;width: 100%; -moz-animation: myMove 1s linear infinite alternate;   -webkit-animation: myMove 1s linear infinite alternate;  -o-animation: myMove 1s linear infinite alternate;  animation: myMove 1s linear infinite alternate;}
+#down {  position: fixed;z-index: 100;width: 100%;height: .01rem; -moz-animation: myMove 1s linear infinite alternate;   -webkit-animation: myMove 1s linear infinite alternate;  -o-animation: myMove 1s linear infinite alternate;  animation: myMove 1s linear infinite alternate;}
 #downCanvas{margin: 0 auto;margin-top: 4.8rem;}
 /*.section {  font: 18px "Microsoft Yahei"; color: #393939;}*/
 .box1 { position: relative; width:100%; height: 100%; margin: 0 auto; background: url(../images/12.jpg); background-position: -400px 0px;background-size: 286%;overflow: hidden;}
@@ -145,7 +145,7 @@ a {
 
 
 /*按钮样式*/
-.button{width: .90rem;line-height: .16rem;text-align: center;font-size:.12rem;color: #fff;font-family:"Microsoft Yahei";text-shadow:.01rem .01rem .01rem #333;border-radius: .05rem;margin:0;position: relative;overflow: hidden;}
+.button{z-index:101;width: .90rem;line-height: .16rem;text-align: center;font-size:.12rem;color: #fff;font-family:"Microsoft Yahei";text-shadow:.01rem .01rem .01rem #333;border-radius: .05rem;margin:0;position: relative;overflow: hidden;}
 .button.black{border:.01rem solid #333;box-shadow: 0 .01rem .02rem #8b8b8b inset,0 -.01rem 0 #3d3d3d inset,0 -.02rem .03rem #8b8b8b inset;background: -webkit-linear-gradient(top,#656565,#4c4c4c);background:#656565;background: -moz-linear-gradient(top,#656565,#4a4a4a);background: linear-gradient(top,#656565,#4a4a4a); }
 /*:root .button.black{filter:none;} */
 .black:hover{cursor: pointer;background: -webkit-linear-gradient(top,#818181,#575757);background: -moz-linear-gradient(top,#818181,#575757);background: linear-gradient(top,#818181,#575757);}
