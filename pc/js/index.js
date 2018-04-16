@@ -58,9 +58,9 @@ $(document).ready(function() {
 					//第三页柱状条动画
 					$(function () {
 						$('#bar-1').jqbar({ label: 'HTML/CSS', value: 82, barColor: '#D64747' });
-						$('#bar-2').jqbar({ label: 'Javascript', value: 78, barColor: '#FF681F' });
+						$('#bar-2').jqbar({ label: 'Javascript', value: 83, barColor: '#FF681F' });
 						$('#bar-3').jqbar({ label: 'jQuery', value: 84, barColor: '#ea805c' });
-						$('#bar-4').jqbar({ label: 'React', value: 50, barColor: '#88bbc8' });
+						$('#bar-4').jqbar({ label: 'React', value: 89, barColor: '#88bbc8' });
 						$('#bar-5').jqbar({ label: 'C/C++/VB', value: 60, barColor: '#939393' });
 						$('#bar-6').jqbar({ label: 'English', value: 90, barColor: '#3a89c9' });
 					});
